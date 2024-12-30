@@ -1,0 +1,21 @@
+<div>
+    <h1 class="text-3xl text-center font-bold">
+        Datos personales
+      </h1>
+    <div class="flex w-full px-10">
+        <div class="flex-end w-full">
+            <p class="text-end my-5">Agregar tres puntos y lapiz</p>
+            <div class="flex flex-col w-full gap-4"
+            cdkDropList
+            (cdkDropListDropped)="moveItem($event)"
+            [cdkDropListData]="items"
+            >
+                <div *ngFor="let item of items" cdkDrag cdkDragPreviewContainer="parent">
+                    <div class="card">
+                        {{item.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

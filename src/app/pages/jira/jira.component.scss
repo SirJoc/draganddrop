@@ -1,0 +1,14 @@
+.card {
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.cdk-drag-preview {
+    background-color: #e6e5e3;
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0.5;
+}
